@@ -1,26 +1,21 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace tehtava5
+namespace teht7
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int ts, s, m, h;
-
-            Console.Write("Anna sekunnit > ");
-            ts = int.Parse(Console.ReadLine());
-            s = ts % 60;
-            m = (ts / 60)/60;
-            h = ((ts / 60)/60)/24;
-            
-            Console.WriteLine(h + " tunti, " + m + " minuuttia, " + s + " sekuntia.");
+            Console.Write("anna vuosi ");
+            int luku;
+            luku = int.Parse(Console.ReadLine());
+            if (luku % 4 == 0 ||luku % 400 == 0)
+                Console.WriteLine("vuosi on karkausvuosi");
             Console.ReadLine();
-            
         }
     }
 }
