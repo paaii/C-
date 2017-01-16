@@ -1,26 +1,23 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Application
+namespace tehtava11
 {
-	class MainClass
-	{
-		public static void Main (string[] args)
-		{
-			int val = 5;
-			int i, j, k ;
-			for (i = 1; i <= val; i++)
-			{
-				for (j = 1; j <= val-i; j++)
-				{
-					
-				}
-				for (k = 1; k <= i; k++)
-				{
-					Console.Write("*");
-				}
-				Console.WriteLine("");
-			}
-			Console.ReadLine();
-		}
-	}
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for(int i = 0; i < 5; i++)
+            {
+                Console.Write("*");
+                for (int j = 0; j < i; j++)
+                    Console.Write("*");
+                Console.WriteLine("");
+            }
+            Console.ReadLine();
+        }
+    }
 }
